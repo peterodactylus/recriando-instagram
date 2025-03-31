@@ -10,7 +10,7 @@ body{
 
 main{
     display: flex;
-    overflow-y:auto
+    overflow-y:auto;
 }
 
 aside{
@@ -24,7 +24,7 @@ aside{
 #logo{
     padding-left: 15px;
     margin-top: 32px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
 }
 
 .menu-item.casa{
@@ -86,6 +86,11 @@ main #direita{
     font-size: 10px;
     text-align: center;
     margin-top: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    padding-bottom: 10px;
 }
 
 #header{
@@ -112,11 +117,11 @@ main #direita{
     color: grey;
 }
 #menu-1{
-    margin-left: 280px;
+    margin-left: 285px;
 }
 
 #menu-2{
-    margin-left: 245px;
+    margin-left: 247px;
 }
 .post-image{
     height: 468px;
@@ -196,7 +201,7 @@ main #direita{
 }
 
 #emoji{
-    margin-left:300px
+    margin-left:300px;
 }
 
 .separador{
@@ -207,80 +212,62 @@ main #direita{
     margin-left: 70px;
 }
 
-#perfil{
-    display: flex;
-    gap: 10px;
-}
-
-#perfil-foto{
-    height: 45px;
-    width: 45px;
-    border-radius: 50px;
-}
-
-#perfil-nickname{
-    margin-bottom:auto;
-    margin-top: auto;
-}
-
-#perfil-nome{
-    margin: 0;
-    color: gray;
-}
-
-#botao-mudar{
-    color: #008eea;
-    margin-left: 140px;
-}
-
 #titulo{
     display: flex;
 }
 
 #titulo-sugestoes{
-    color: grey;
+    color: rgb(156, 156, 156);
+    font-size: 13px;
+    font-weight: 700;
 }
 
-#botao-sugestoes{
+#titulo-expandir{
     margin-left: auto;
-    text-align: center;
-    margin-right: 0px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
-#sugestoes{
+#perfil{
     display: flex;
     gap: 10px;
 }
 
-.sugestoes-foto{
+.perfil-foto{
     height: 45px;
     width: 45px;
     border-radius: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }   
 
-.sugestoes-nome{
+.perfil-nome{
     display: flex;
 }
 
-.sugestoes-username{
-    margin-bottom: auto;
-    margin-top: auto;
-    padding: 5px;
-}   
+.perfil-nickname{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    height:1.3em;
+}  
 
-.sugestoes-seguido{
+.perfil-footer{
     margin: 0;
     font-size: 12px;
     color: grey;
+    height:1.3em;
 }
 
-.sugestoes-seguir{
+.perfil-interacao{
     color: #008eea;
     margin-left: auto;
+    margin-top: 0;
+    font-size: 12px;
 }
 
 #informacoes-site{
-    font-size: 12px;
+    font-size: 11px;
     color: grey;
 }
