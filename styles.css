@@ -76,10 +76,9 @@ main #direita{
     margin-right: 3px;
     height: 62px;
     width: 62px;
-    border-width: 2px;
     border-radius: 50px;
-    border-style:solid;
-    border-color: rgb(208, 57, 57);
+    border:3px solid transparent;
+    background: padding-box, linear-gradient(210deg, #C13584, #9B4F96, #D5006C, #E4A300, #F58529) border-box;    
 }
 
 .story-item p{
@@ -104,8 +103,14 @@ main #direita{
     height: 30px;
     width: 30px;
     border-radius: 50px;
-    border-style: ridge;
-    border-color: rgb(208, 57, 57);
+}
+
+.header.foto.story{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border:3px solid transparent;
+    background: padding-box, linear-gradient(210deg, #C13584, #9B4F96, #D5006C, #E4A300, #F58529) border-box;    
 }
 
 .header.username{
@@ -242,6 +247,8 @@ main #direita{
 
 .perfil-nome{
     display: flex;
+    gap: 5px;
+    align-items:baseline;
 }
 
 .perfil-nickname{
