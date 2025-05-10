@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100..900&display=swap');
 
 body{
-    background-color: black;
-    color:white;
+    background-color: #000000;
+    color:#ffffff;
     display: flex;
     font-family: "Noto Sans Symbols", sans-serif;
     font-size: 15px;
@@ -14,7 +14,7 @@ main{
 }
 
 aside{
-    border-right: 1px solid rgb(40, 40, 40);
+    border-right: 1px solid #282828;
     padding-right: 88px;
     height: 100vh;
     max-height: 100%;
@@ -27,31 +27,31 @@ aside{
     margin-bottom: 25px;
 }
 
+.menu-item{
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    line-height: 1.4;
+    align-items: center;
+}
+
 .menu-item.casa{
     align-items: center;
     padding-top:0px;
 }
 
-.menu-item{
-    display: flex;
-    gap: 15px;
-    padding-left: 15px;
-    padding-top: 5px;
-    line-height: 1.4;   
+.menu-item img{
+    width: 24px;
 }
 
-.menu-item.foto{
-    align-items: center;
-    padding-top:5px;
-}
-
-.menu-item.foto img{
+.menu-foto{
     height: 25px;
     width: 25px;
     border-radius: 50px;
 }
-
-#menu-link{
+#menu-baixo{
     margin-top: 270px;
 }
 
@@ -72,16 +72,18 @@ main #direita{
 }
 
 .story-item img{
+    cursor: pointer;
     display: flex;
     margin-right: 3px;
-    height: 62px;
-    width: 62px;
+    height: 60px;
+    width: 60px;
     border-radius: 50px;
     border:3px solid transparent;
-    background: padding-box, linear-gradient(210deg, #C13584, #9B4F96, #D5006C, #E4A300, #F58529) border-box;    
+    background: padding-box, linear-gradient(210deg, #C13584, #9B4F96, #D5006C, #E4A300, #F58529) border-box;
 }
 
 .story-item p{
+    cursor: pointer;
     font-size: 10px;
     text-align: center;
     margin-top: auto;
@@ -89,7 +91,6 @@ main #direita{
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 70px;
-    padding-bottom: 10px;
 }
 
 #header{
@@ -97,15 +98,18 @@ main #direita{
     gap: 5px;
     align-items: center;
     margin-left: 75px;
+    margin-top: 10px;
 }
 
 .header.foto{
+    cursor: pointer;
     height: 30px;
     width: 30px;
     border-radius: 50px;
 }
 
 .header.foto.story{
+    cursor: pointer;
     height: 30px;
     width: 30px;
     border-radius: 50px;
@@ -114,14 +118,17 @@ main #direita{
 }
 
 .header.username{
+    cursor: pointer;
     text-align: center;
     margin-left: 5px;
 }
 
 .header.tempo{
-    color: grey;
+    cursor: pointer;
+    color: #808080;
 }
-#menu-1{
+#menu-opcao{
+    cursor: pointer;
     margin-left: 285px;
 }
 
@@ -135,7 +142,7 @@ main #direita{
     border-width: 1px;
     border-radius: 1%;
     border-style: solid;
-    border-color: rgb(40, 40, 40);
+    border-color: #282828;
 }
 
 #footer{
@@ -145,8 +152,13 @@ main #direita{
     margin-left: 70px;
 }
 
+#footer img{
+    cursor: pointer;
+    width: 24px;
+}
 #favorito{
     margin-left: 330px;
+    width: 24px;
 }
 
 #interacao{
@@ -158,14 +170,22 @@ main #direita{
 }
 
 #interacao img{
+    cursor: pointer;
     height: 15px;
     width: 15px; 
     border-radius: 50px;
 }
 
 #interacao p{
+    cursor: pointer;
     font-weight: 500;
     padding-left: 2px;
+    height:1.3em;
+}
+
+.perfil-seguir:hover{
+    color: #e0f1ff;
+    cursor: pointer;
 }
 
 .descricao{
@@ -183,12 +203,14 @@ main #direita{
 }
 
 #ver-comentario{
-    color: grey;
+    cursor: pointer;
+    color: #808080;
     margin-left: 75px;
 
 }
 
 #traducao{
+    cursor: pointer;
     margin-top: auto;
     margin-left: 75px;
 }
@@ -199,22 +221,39 @@ main #direita{
     gap: 5px;
 }
 
-#add{
+#comentario textarea{
+    width: 415px;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    height:2.1em;
+    font-family: "Noto Sans Symbols", sans-serif;
+}
+
+.comentar{
     margin: 0;
-    color: grey;
+    color: #808080;
     margin-left: 75px;
 }
 
-#emoji{
-    margin-left:300px;
+.emoji{
+    cursor: pointer;
+    margin-left:30px;
 }
 
 .separador{
-    border-bottom: rgb(125, 125, 125);
-    border-right:  rgb(125, 125, 125);
-    border-color: rgb(125, 125, 125);
+    border-bottom: #7d7d7d;
+    border-right:  #7d7d7d;
+    border-color: #7d7d7d;
     width: 475px;
     margin-left: 70px;
+}
+
+#direita{
+    max-width: 290px;
 }
 
 #titulo{
@@ -222,23 +261,34 @@ main #direita{
 }
 
 #titulo-sugestoes{
-    color: rgb(156, 156, 156);
+    color: #999999;
     font-size: 13px;
     font-weight: 700;
+    margin-top: 0;
 }
 
 #titulo-expandir{
-    margin-left: auto;
     font-size: 12px;
     font-weight: 500;
+    margin-top: 0;
+    margin-left: auto;
+}
+
+#titulo-expandir:hover{
+    cursor: pointer;
+    color: #808080;
 }
 
 #perfil{
     display: flex;
     gap: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .perfil-foto{
+    cursor: pointer;
     height: 45px;
     width: 45px;
     border-radius: 50px;
@@ -258,23 +308,37 @@ main #direita{
     font-size: 13px;
     font-weight: 500;
     height:1.3em;
+    cursor: pointer;    
 }  
 
 .perfil-footer{
     margin: 0;
     font-size: 12px;
-    color: grey;
+    color: #999999;
     height:1.3em;
 }
 
-.perfil-interacao{
-    color: #008eea;
+.perfil-seguir{
+    color: #0095F6;
     margin-left: auto;
     margin-top: 0;
     font-size: 12px;
+    height:1.3em;
 }
 
 #informacoes-site{
     font-size: 11px;
-    color: grey;
+    color: #808080;
+    padding-top: 10px;
+}
+
+#informacoes-site a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #808080;
+    display: inline;
+}
+
+#informacoes-site a:hover{
+    text-decoration: underline;
 }
